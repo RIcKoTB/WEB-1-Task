@@ -1,0 +1,129 @@
+/* styles.css */
+
+/* 5. Використання всіх категорій CSS селекторів */
+
+/* 5.1. Прості селектори */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Додайте ці стилі для центрування aside і його контенту */
+aside {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto; /* Змініть значення margin за потребою */
+    padding: 20px;
+    background-color: #f8f8f8; /* Змініть на власний колір фону */
+    border: 1px solid #ddd; /* Змініть на власний колір межі */
+    border-radius: 5px;
+}
+
+/* Додайте це, щоб текст всередині aside був відцентрований */
+aside h2, aside p {
+    text-align: center;
+}
+
+
+h1, h2, h3 {
+    color: #007bff;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+/* 5.2. Комбінаторні селектори */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* 5.3. Псевдо-класи */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 5.4. Псевдоелементи */
+::selection {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* 5.5. Селектори атрибутів */
+[type="text"] {
+    width: 200px;
+    padding: 5px;
+}
+
+/* 7. Reboot та Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 8. Уникнення фіксованих розмірів */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 9. Використання CSS background-image */
+header {
+    background-image: url('path/to/header-background.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    width: 100%; /* Додайте цей рядок, щоб розтягнути header на всю ширину */
+}
+
+/* 10. Стаилзування елементів форми */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Додайте стилі для відцентрування інших елементів за потребою */
+main {
+    width: 80%; /* Наприклад, розташуйте контент по центру і обмежте його ширину */
+    max-width: 1200px; /* Максимальна ширина контенту */
+    margin: 0 auto; /* Відцентруйте main відносно батьківського елемента */
+}
